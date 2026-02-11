@@ -12,8 +12,8 @@ android {
         applicationId = "com.moneyprinter"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     buildTypes {
@@ -47,4 +47,13 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.animation:animation")
+
+    // AdMob
+    implementation("com.google.android.gms:play-services-ads:23.0.0")
+
+    // Google Play Billing
+    implementation("com.android.billingclient:billing-ktx:7.0.0")
+
+    // WorkManager for scheduled notifications
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
 }
